@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const grid = document.getElementsByClassName('grid')[0];
     let width = 10;
     let squares = [];
+    let flags = 0;
     let numberOfBombs = 20;
     let isGameOver = false;
 
@@ -31,6 +32,12 @@ function createBoard() {
         square.addEventListener('click', function(event) {
             click(square);
         })
+
+        // Cntrl and left click to add flags
+        square.oncontextmenu = function(event) {
+            event.preventDefault();
+            addFlag(square);
+        }
     }
 
 
@@ -42,15 +49,16 @@ function createBoard() {
         let isRightEdge = (i % width === width - 1);
 
         if (squares[i].classList.contains('valid')) {
-            if (i > 0 && !isLeftEdge && squares[i - 1].classList.contains('bomb')) total ++;
+            if (i > 0 && !isLeftEdge && squares[i -1].classList.contains('bomb')) total ++;
             if (i > 9 && !isRightEdge && squares[i +1 -width].classList.contains('bomb')) total ++;
-            if (i > 10 && squares[i - width].classList.contains('bomb')) total ++;
-            if (i > 11 && !isLeftEdge && squares[i - 1 - width].classList.contains('bomb')) total ++;
-            if (i < 98 && !isRightEdge && squares[i + 1].classList.contains('bomb')) total ++;
-            if (i < 90 && !isLeftEdge && squares[i - 1 + width].classList.contains('bomb')) total ++;
-            if (i < 88 && !isRightEdge && squares[i + 1 + width].classList.contains('bomb')) total ++;
+            if (i > 10 && squares[i -width].classList.contains('bomb')) total ++;
+            if (i > 11 && !isLeftEdge && squares[i -1 -width].classList.contains('bomb')) total ++;
+            if (i < 98 && !isRightEdge && squares[i +1].classList.contains('bomb')) total ++;
+            if (i < 90 && !isLeftEdge && squares[i -1 +width].classList.contains('bomb')) total ++;
+            if (i < 88 && !isRightEdge && squares[i +1 +width].classList.contains('bomb')) total ++;
+            if (i < 89 && squares[i +width].classList.contains('bomb')) total ++;
             squares[i].setAttribute('data', total);
-            console.log(squares[i]);
+            
         }
     }
 
@@ -64,8 +72,23 @@ function createBoard() {
 createBoard();
 
 
+// Function to add a flag on the squares with bombs using right click
+function addFlag(square) {
+    if (isGameOver) return;
+    if (!square.classList.contains('checked') && (flags < numberOfBombs)) {
+        if (!square.classList.contains(['flag'])) {
+            square.classList.add('flag');
+            square.innerHTML = '🚩';
+            flags ++;
+        } else {
+            square.classList.remove('flag');
+            square.innerHTML = '';
+            flags --;
+        }
+    }
+}
 
-})
+
 
 
 // Function to shuffle the gameArray content
@@ -91,7 +114,7 @@ function click(square) {
     if (isGameOver) return;
     if (square.classList.contains('checked') || square.classList.contains('flag')) return;
     if (square.classList.contains('bomb')) {
-        console.log('Game Over');
+        gameOver(square);
     } else {
         let total = square.getAttribute('data')
         if (total != 0) {
@@ -103,3 +126,79 @@ function click(square) {
     }
     square.classList.add('checked');
 }
+
+/**
+ * Using recursion to check the eight squares adjoining the clicked square
+ * a function calling itself until a condition (base condition) is met
+ * reference: https://developer.mozilla.org/en-US/docs/Glossary/Recursion
+ */
+// Function to check neighbouring squares when one square is clicked
+function checkSquare(square, currentId) {
+    const isLeftEdge = (currentId % width === 0);
+    const isRightEdge = (currentId % width === width - 1);
+
+
+    setTimeout(function() {
+        if (currentId > 0 && !isLeftEdge) {
+          const newId = squares[parseInt(currentId) -1].id
+          const newSquare = document.getElementById(newId)
+          click(newSquare)
+        }
+        if (currentId > 9 && !isRightEdge) {
+          const newId = squares[parseInt(currentId) +1 -width].id
+          const newSquare = document.getElementById(newId)
+          click(newSquare)
+        }
+        if (currentId > 10) {
+          const newId = squares[parseInt(currentId -width)].id
+          const newSquare = document.getElementById(newId)
+          click(newSquare)
+        }
+        if (currentId > 11 && !isLeftEdge) {
+          const newId = squares[parseInt(currentId) -1 -width].id
+          const newSquare = document.getElementById(newId)
+          click(newSquare)
+        }
+        if (currentId < 98 && !isRightEdge) {
+          const newId = squares[parseInt(currentId) +1].id
+          const newSquare = document.getElementById(newId)
+          click(newSquare)
+        }
+        if (currentId < 90 && !isLeftEdge) {
+          const newId = squares[parseInt(currentId) -1 +width].id
+          const newSquare = document.getElementById(newId)
+          click(newSquare)
+        }
+        if (currentId < 88 && !isRightEdge) {
+          const newId = squares[parseInt(currentId) +1 +width].id
+          const newSquare = document.getElementById(newId)
+          click(newSquare)
+        }
+        if (currentId < 89) {
+          const newId = squares[parseInt(currentId) +width].id
+          const newSquare = document.getElementById(newId)
+          click(newSquare)
+        }
+      }, 10);
+}
+
+// Game Over function when user clicks on a square with a bomb
+function gameOver(square) {
+    console.log('BOOM! Game Over!');
+    isGameOver = true;
+
+    
+    /**
+     * Using the inbuilt forEach() method 
+     * forEach() calls a provided callbackFn function once for each element in an array in ascending-index order
+     * Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+     */
+    // Show all the bombs when game is over
+    squares.forEach(function(square) {
+        if (square.classList.contains('bomb')) {
+            square.innerHTML = '💣';
+        }
+    })
+}
+
+})
