@@ -16,11 +16,11 @@ More on the history of Minesweeper [here](https://en.wikipedia.org/wiki/Mineswee
 
 **Rules**
 
-The rules are straightforward:
-1. Click on any one of the cells/boxes in the grid to start
-2. The numbers depict how many mines are adjacent to any given cell.
-3. The purpose of the game is to navigate the board without clicking on any of the mines/bombs
-4. Use "Cntrl + Click" to add a flag to a cell if you think it's a mine. ("Cntrl + Click" again to remove the flag if you change your mind)
+- The rules are straightforward:
+  1. Click on any one of the cells/boxes in the grid to start
+  2. The numbers depict how many mines are adjacent to any given cell.
+  3. The purpose of the game is to navigate the board without clicking on any of the mines/bombs
+  4. Use "Cntrl + Click" to add a flag to a cell if you think it's a mine. ("Cntrl + Click" again to remove the flag if you change your mind)
 
 **Winning/Losing**
 - If you click on a mine: GAME OVER, pal. Clicking on Try Again will reset the game and you can try your luck once more!
