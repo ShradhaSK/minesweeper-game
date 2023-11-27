@@ -28,3 +28,56 @@ More on the history of Minesweeper [here](https://en.wikipedia.org/wiki/Mineswee
 
 [Play the game here!](https://shradhask.github.io/minesweeper-game/)
 
+# Technologies Used
+
+The three Web Development Musketeers: 
+
+- HTML
+- CSS
+- JavaScript
+
+# HTML
+
+The HTML code is pretty concise and to the point; most of the real action comes from Javascript. Also, the game board itself is a simple div element populated by Javascript.
+
+# CSS
+
+I had fun styling the individual box borders and the fonts for the displayed numbers. I also made it fairly responsive by adding media queries for tablets, laptops and larger screen sizes.
+
+# JavaScript
+
+Since this was my first time ever writing a functioning web app using JavaScript from scratch, it's not a big surprise that this section was by far the greatest challenge of the project for me. Below are some that made the headlines:
+
+1. Dynamically creating the 10 X 10 boxes for the board using ```for``` loop
+
+2. Randomizing bomb placement on the array.
+   
+3. Rendering everything in the DOM.
+
+4. Assigning click handlers to different events.
+
+5. Creating win/lose logic
+
+6. Figuring out the control flow of how the functions are all chained together synchronously.
+
+7. Learning about recursion and how to properly write a function that creates such an effect.
+
+# Design
+
+- I chose a simple yet elegant design, with the individual cells having a tile-like effect
+
+- I selected diferent colors for different numbers displayed on the screen to visual appeal
+
+- I added the Reset button (Try Again) to be displayed only when the game is over
+
+I figured for my first project I needed to learn how to walk before I could run and imitate the original Windows Minesweeper game.
+I'm very glad I chose this path, because I learned A LOT by simply trying to match the styles from the original game.
+With that said, I am definitely going to create a modernized version of this game someday soon.
+
+# Deployment
+
+
+
+
+
+
