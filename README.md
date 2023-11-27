@@ -15,6 +15,7 @@ More on the history of Minesweeper [here](https://en.wikipedia.org/wiki/Mineswee
 # Getting Started
 
 **Rules**
+
 The rules are straightforward:
 1. Click on any one of the cells/boxes in the grid to start
 2. The numbers depict how many mines are adjacent to any given cell.
