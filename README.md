@@ -49,9 +49,9 @@ I had fun styling the individual box borders and the fonts for the displayed num
 
 Since this was my first time ever writing a functioning web app using JavaScript from scratch, it's not a big surprise that this section was by far the greatest challenge of the project for me. Below are some that made the headlines:
 
-1. Dynamically creating the 10 X 10 boxes for the board using ```for``` loop
+1. Dynamically creating the 10 X 10 boxes array for the board using ```for``` loop
 
-2. Randomizing bomb placement on the array.
+2. Randomizing the bomb placement on the array.
    
 3. Rendering everything in the DOM.
 
