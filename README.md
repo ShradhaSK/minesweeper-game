@@ -89,6 +89,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 # Next Steps
 
 - I would really like to make the game as much like the original Windows Minesweeper game as possible
+  
   <img width="139" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/af10f69f-8ff8-4f44-b6ff-3e9f18cebf36">
 
 - I want to work on adding difficulty levels to the game (Easy, Medium, Hard)
