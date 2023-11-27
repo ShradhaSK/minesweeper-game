@@ -6,6 +6,12 @@ This game probably brings back childhood memories for most, if not all, of us. I
 More on the history of Minesweeper [here](https://en.wikipedia.org/wiki/Minesweeper_(video_game))
 
 
+# My Version
+<img width="463" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/c16734d2-00c8-4379-99ce-78e2b9fa5677">
+<img width="448" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/704a7ace-7c00-43a7-ae31-7e85b05949e3">
+
+
+
 This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
 You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
