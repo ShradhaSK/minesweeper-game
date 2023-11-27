@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const grid = document.getElementsByClassName('grid')[0];
     let flagsLeft = document.getElementById('flags-left');
+    let result = document.getElementById('result');
+    let tryAgainBtn = document.getElementById('try-again');
+    result.innerHTML = '😊'
     let width = 10;
     let squares = [];
     let flags = 0;
@@ -64,12 +67,6 @@ function createBoard() {
             
         }
     }
-
-
-
-
-
-
 
 }
 createBoard();
@@ -197,8 +194,13 @@ function checkSquare(square, currentId) {
 
 // Game Over function when user clicks on a square with a bomb
 function gameOver(square) {
-    console.log('BOOM! Game Over!');
+    result.innerHTML = 'BOOM! Game Over!';
     isGameOver = true;
+    tryAgainBtn.style.display = 'block';
+    tryAgainBtn.addEventListener('click', function() {
+        // Reload the page when the button is clicked
+        location.reload();
+    });
 
     
     /**
