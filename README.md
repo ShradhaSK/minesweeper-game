@@ -87,7 +87,24 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 # Next Steps
 
-- I would really like to make the game as much like the original Windows Minesweeper game as possible <img width="139" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/af10f69f-8ff8-4f44-b6ff-3e9f18cebf36">
+- I would really like to make the game as much like the original Windows Minesweeper game as possible
+  <img width="139" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/af10f69f-8ff8-4f44-b6ff-3e9f18cebf36">
+
+- I want to work on adding difficulty levels to the game (Easy, Medium, Hard)
+
+- I want to also add a timer to the game, so the user has a limited amount of time before the game is automatically ended.
+
+# Credits / References
+
+- I asked ChatGpt how to create the Try again button so it is displayed ony at the end of a game in both win and lose conditions
+
+- I asked ChatGpt how to reload page when user clicks on the Try Again button at the end of a game.
+
+- I watched and read through tutorials on recursive functions to understand how to display the adjoining cells:
+  - [https://www.youtube.com/watch?v=Q0alTGQ-lXk](https://www.youtube.com/watch?v=Q0alTGQ-lXk)
+  - [https://www.youtube.com/watch?v=LteNqj4DFD8](https://www.youtube.com/watch?v=LteNqj4DFD8)
+  - [https://www.javascripttutorial.net/javascript-recursive-function/](https://www.javascripttutorial.net/javascript-recursive-function/)
+  - [https://medium.com/@zfrisch/understanding-recursion-in-javascript-992e96449e03](https://medium.com/@zfrisch/understanding-recursion-in-javascript-992e96449e03)
 
 
 
