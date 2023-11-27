@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const grid = document.getElementsByClassName('grid')[0];
+    let flagsLeft = document.getElementById('flags-left');
     let width = 10;
     let squares = [];
     let flags = 0;
@@ -8,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create Board
 function createBoard() {
+    // Update the Flags left to the number of bombs
+    flagsLeft.innerHTML = numberOfBombs;
 
     //  Get shuffled game array with random bombs
 
@@ -80,10 +83,15 @@ function addFlag(square) {
             square.classList.add('flag');
             square.innerHTML = '🚩';
             flags ++;
+            // Update the number of flags left
+            flagsLeft.innerHTML = numberOfBombs - flags;
+            checkWin();
         } else {
             square.classList.remove('flag');
             square.innerHTML = '';
             flags --;
+            // Update the number of Flags
+            flagsLeft.innerHTML = numberOfBombs - flags;
         }
     }
 }
@@ -119,6 +127,11 @@ function click(square) {
         let total = square.getAttribute('data')
         if (total != 0) {
             square.classList.add('checked');
+            // Adding different colours for different bomb totals
+            if (total == 1) square.classList.add('one');
+            if (total == 2) square.classList.add('two');
+            if (total == 3) square.classList.add('three');
+            if (total == 4) square.classList.add('four');
             square.innerHTML = total;
             return;
         }
@@ -199,6 +212,22 @@ function gameOver(square) {
             square.innerHTML = '💣';
         }
     })
+}
+
+
+// Function to check for a win
+function checkWin() {
+    let matches = 0;
+
+    for (let i = 0; i < squares.length; i++) {
+        if (squares[i].classList.contains('flag') && squares[i].classList.contains('bomb')) {
+            matches ++;
+        }
+        if (matches === numberOfBombs) {
+            console.log("You Win!");
+            isGameOver = true;
+        }
+    }
 }
 
 })
