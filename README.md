@@ -1,4 +1,4 @@
-![bomb](https://github.com/ShradhaSK/minesweeper-game/assets/131806140/2c2541f3-2cc8-4df8-8f6c-bd45dbe21bf3)# Minesweeper
+# Minesweeper ![bomb](https://github.com/ShradhaSK/minesweeper-game/assets/131806140/2c2541f3-2cc8-4df8-8f6c-bd45dbe21bf3)
 
 
 Welcome,
