@@ -1,4 +1,4 @@
-# Minesweeper [MinesweeperIcon](favicon.ico)
+# Minesweeper (favicon.ico)
 
 Welcome,
 
