@@ -228,6 +228,12 @@ function checkWin() {
         if (matches === numberOfBombs) {
             console.log("You Win!");
             isGameOver = true;
+            tryAgainBtn.style.display = 'block';
+            tryAgainBtn.addEventListener('click', function() {
+            // Reload the page when the button is clicked
+            location.reload();
+            });
+            
         }
     }
 }
