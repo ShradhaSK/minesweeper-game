@@ -23,7 +23,8 @@ More on the history of Minesweeper [here](https://en.wikipedia.org/wiki/Mineswee
   4. Use "Cntrl + Click" to add a flag to a cell if you think it's a mine. ("Cntrl + Click" again to remove the flag if you change your mind)
 
 **Winning/Losing**
-- If you click on a mine: GAME OVER, pal. Clicking on Try Again will reset the game and you can try your luck once more!
+- If you click on a mine: GAME OVER, pal.
+- Clicking on Try Again will reset the game and you can try your luck once more!
 - Uncover all the cells without mines and flag all the cells with mines to win!
 
 [Play the game here!](https://shradhask.github.io/minesweeper-game/)
