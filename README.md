@@ -102,7 +102,20 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 - I confirmed that the game always behaved as expected.
 
-- 
+- I confirmed that the colors and fonts chosen are easy to read and accesible by running through lighthouse in dev tools
+
+  <img width="487" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/6502fe85-bcf6-4e66-9dac-577bafa50079">
+
+- I confirmed that the project is responsive and functions on all standard screen sizes by using the dev tools device toolbar
+
+# Validator Testing
+
+- HTML
+  - No errors were found when passing through the official W3C Validator.
+
+- CSS
+  - No errors were found when passing through the official (Jigsaw) Validator.
+
 
 
 # Next Steps
