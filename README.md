@@ -1,7 +1,10 @@
 # Minesweeper ![bomb](https://github.com/ShradhaSK/minesweeper-game/assets/131806140/2c2541f3-2cc8-4df8-8f6c-bd45dbe21bf3)
 
 
-Welcome,
+This game probably brings back childhood memories for most, if not all, of us. I remember spending hours together hooked to the screen of my Windows '95 desktop trying to figure out a way to win the game! In fact, Minesweeper has its origins in the earliest mainframe games of the 1960s and 1970s. The earliest ancestor of Minesweeper was Jerimac Ratliff's Cube. The basic gameplay style became a popular segment of the puzzle game genre during the 1980s.
+
+More on the history of Minesweeper [here](https://en.wikipedia.org/wiki/Minesweeper_(video_game))
+
 
 This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
