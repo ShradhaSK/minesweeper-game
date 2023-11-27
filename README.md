@@ -8,8 +8,11 @@ More on the history of Minesweeper [here](https://en.wikipedia.org/wiki/Mineswee
 
 # My Version
 
-<img width="406" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/3ed07059-e40b-4d3f-ae8b-1797443dc3dd">
-<img width="393" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/a58b8f56-3b62-4574-9866-9984f69eeed4">
+<img width="855" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/e82065f0-540d-480a-8551-f03e96d8ef5c">
+
+
+
+
 
 
 # Getting Started
@@ -18,12 +21,17 @@ More on the history of Minesweeper [here](https://en.wikipedia.org/wiki/Mineswee
 
 - The rules are straightforward:
   1. Click on any one of the cells/boxes in the grid to start
-  2. The numbers depict how many mines are adjacent to any given cell.
-  3. The purpose of the game is to navigate the board without clicking on any of the mines/bombs
-  4. Use "Cntrl + Click" to add a flag to a cell if you think it's a mine. ("Cntrl + Click" again to remove the flag if you change your mind)
+ 
+     <img width="406" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/3ed07059-e40b-4d3f-ae8b-1797443dc3dd">
+     
+  3. The numbers depict how many mines are adjacent to any given cell.
+  4. The purpose of the game is to navigate the board without clicking on any of the mines/bombs
+  5. Use "Cntrl + Click" to add a flag to a cell if you think it's a mine. ("Cntrl + Click" again to remove the flag if you change your mind)
 
 **Winning/Losing**
 - If you click on a mine: GAME OVER, pal.
+
+  <img width="393" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/a58b8f56-3b62-4574-9866-9984f69eeed4">
 - Clicking on Try Again will reset the game and you can try your luck once more!
 - Uncover all the cells without mines and flag all the cells with mines to win!
 
@@ -84,6 +92,17 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 - In the GitHub repository, navigate to the Settings tab From the source section drop-down menu
 - Select the Master Branch Once the master branch has been selected
 - Wait until the page is automatically refreshed with a detailed ribbon display to indicate successful deployment and the link to the deployed page.
+
+# Testing
+
+- I tested playing the game on different browsers:
+  - Chrome
+  - Safari
+  - Firefox
+
+- I confirmed that the game always behaved as expected.
+
+- 
 
 
 # Next Steps
