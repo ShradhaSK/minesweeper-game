@@ -9,7 +9,8 @@ More on the history of Minesweeper [here](https://en.wikipedia.org/wiki/Mineswee
 # My Version
 
 <img width="406" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/3ed07059-e40b-4d3f-ae8b-1797443dc3dd">
-<img width="448" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/704a7ace-7c00-43a7-ae31-7e85b05949e3">
+<img width="398" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/a53bd0d0-1062-43b0-a51c-cabc0045e111">
+
 
 
 
