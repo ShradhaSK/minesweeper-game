@@ -194,7 +194,7 @@ function checkSquare(square, currentId) {
 
 // Game Over function when user clicks on a square with a bomb
 function gameOver(square) {
-    result.innerHTML = 'BOOM! Game Over!';
+    result.innerHTML = 'BOOM! Game Over!😵';
     isGameOver = true;
     tryAgainBtn.style.display = 'block';
     tryAgainBtn.addEventListener('click', function() {
