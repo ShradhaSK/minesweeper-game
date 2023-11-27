@@ -74,9 +74,20 @@ I figured for my first project I needed to learn how to walk before I could run 
 I'm very glad I chose this path, because I learned A LOT by simply trying to match the styles from the original game.
 With that said, I am definitely going to create a modernized version of this game someday soon.
 
+
 # Deployment
 
+This section describes the process used to deploy the project to a hosting platform
+The site was deployed to GitHub pages. The steps to deploy are as follows: 
 
+- In the GitHub repository, navigate to the Settings tab From the source section drop-down menu
+- Select the Master Branch Once the master branch has been selected
+- Wait until the page is automatically refreshed with a detailed ribbon display to indicate successful deployment and the link to the deployed page.
+
+
+# Next Steps
+
+- I would really like to make the game as much like the original Windows Minesweeper game as possible <img width="139" alt="image" src="https://github.com/ShradhaSK/minesweeper-game/assets/131806140/af10f69f-8ff8-4f44-b6ff-3e9f18cebf36">
 
 
 
